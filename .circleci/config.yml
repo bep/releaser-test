@@ -10,7 +10,7 @@ jobs:
             goreleaser
 workflows:
   version: 2
-  build-workflow:
+  release:
       jobs:
         - build:
             context: org-global
