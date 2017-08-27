@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           command: |
-            goreleaser --skip-publish
+            goreleaser
 workflows:
   version: 2
   build-workflow:
