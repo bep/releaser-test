@@ -3,8 +3,6 @@ jobs:
   build:
     docker:
       - image: bepsays/ci-goreleaser
-        environment:
-            CGO_ENABLED: 0
     steps:
       - checkout
       - run:
