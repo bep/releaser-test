@@ -1,7 +1,10 @@
 build:
   main: main.go
   binary: releaser-test
-  ldflags: -s -w -X hugolib.BuildDate={{.Date}} -linkmode external -extldflags "-static"
+  ldflags: -s -w
+  flags: -tags netgo
+  env:
+      - CGO_ENABLED=0
   goos:
     - darwin
     - linux
