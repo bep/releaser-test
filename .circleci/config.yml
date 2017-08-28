@@ -5,9 +5,7 @@ jobs:
       - image: bepsays/ci-goreleaser
     steps:
       - checkout
-      - run:
-          command: |
-            goreleaser
+      - run: goreleaser
 workflows:
   version: 2
   release:

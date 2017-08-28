@@ -2,7 +2,7 @@ build:
   main: main.go
   binary: releaser-test
   env:
-      - CGO_ENABLED=0
+    - CGO_ENABLED=0
   goos:
     - darwin
     - linux
