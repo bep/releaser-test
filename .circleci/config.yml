@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: bepsays/ci-goreleaser
-    working_directory: "/go/src/github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}"
+    working_directory: /go/src/github.com/bep/releaser-test
     steps:
       - checkout
       - run: goreleaser
