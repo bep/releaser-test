@@ -2,4 +2,4 @@
 
 Just a test repo to test Goreleaser CI setup.
 
-... change.
+... change2.
